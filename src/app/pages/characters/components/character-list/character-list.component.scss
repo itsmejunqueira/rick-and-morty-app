@@ -1,19 +1,16 @@
-.section-header{
-    margin-left: 35px; 
+.section-header {
+    margin-left: 35px;
+
     @media (max-width: 767.98px) {
         justify-content: start;
         flex-direction: column;
         align-items: flex-start;
     }
-    .dropdown{
-        border-radius: 0.5rem;
-        border: 2px solid #a2da94;
-    }
+
 }
 
 
 .card-character {
-
     background: #00aec3;
     width: 240px;
     display: flex;
@@ -23,16 +20,17 @@
     border: 2px solid #a2da94;
     margin: 0.75rem;
     color: white;
-    .card-header{
+
+    .card-header {
         max-width: 100%;
-        img{
+        .card-link {
+            display: block;
+        }
+        .photo-style {
             width: 240px;
-            cursor: pointer; 
+            height: auto;
+            cursor: pointer;
         }
     }
-    .card-link {
-        display: block;
-      }
+
 }
-
-
