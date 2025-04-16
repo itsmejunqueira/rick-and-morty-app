@@ -1,0 +1,30 @@
+h1 {
+    color: #00aec3;
+    -webkit-text-fill-color: #00aec3;
+    -webkit-text-stroke-color: #a2da94;
+    text-shadow:
+        2px 0px 0 #a2da94, -2px 3px 0 #a2da94, 1px 2px 0 #a2da94, 1px 3px 0 #a2da94;
+}
+
+.fixed-top {
+    background-color: #1a193f;
+    color: #00aec3;
+    font-size: xx-large;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input-group {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    border: 2px solid #a2da94;
+    color: #faf172;
+ .btn{
+    color: white;
+ }
+    .btn:hover {
+        background-color: #00aec3;
+        color: white;
+    }
+}

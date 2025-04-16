@@ -1,1 +1,8 @@
-<p>header works!</p>
+<header class="fixed-top p-3">
+    <h1>Rick and Morty</h1>
+    <div class="input-group">
+        <input type="text" (keyup)="search($event)" class="form-control" placeholder="Pesquisa" aria-label="Pesquisa"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+    </div>
+</header>
