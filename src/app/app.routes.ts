@@ -5,8 +5,10 @@ import { EpisodeDetailsComponent } from './pages/episodes/components/episode-det
 import { EpisodeListComponent } from './pages/episodes/components/episode-list/episode-list.component';
 import { LocationListComponent } from './pages/location/components/location-list/location-list.component';
 import { LocationDetailsComponent } from './pages/location/components/location-details/location-details.component';
+import { HomeComponent } from './pages/home/home.component';
 
 export const routes: Routes = [
+    { path: 'home', component: HomeComponent },
     { path: 'character-details/:id', component: CharacterDetailsComponent },
     { path: 'character-list', component: CharacterListComponent },
     { path: 'episode-details/:id', component: EpisodeDetailsComponent },
