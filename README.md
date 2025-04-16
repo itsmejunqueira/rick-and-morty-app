@@ -14,7 +14,7 @@ Site - Rick And Morty
   
  📲 Versão publicada 💻
  
-(https://itsmejunqueira.github.io/rick-and-morty-app/character-list)
+(https://itsmejunqueira.github.io/rick-and-morty-app/home)
 
 🌐Technologies
 
