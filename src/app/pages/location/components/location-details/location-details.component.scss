@@ -1,0 +1,49 @@
+
+.card-location {
+
+    background: #00aec3;
+    width: 50%;
+    display: flex;
+    overflow: hidden;
+    background: #00aec3;
+    border-radius: 0.5rem;
+    border: 2px solid #a2da94;
+    margin: 0.75rem;
+    color: white;
+    .location-content{
+        display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-evenly;
+            
+            .card-header{
+                max-width: 100%;
+                img{
+                    width: 240px;
+                    cursor: pointer; 
+                }
+            }
+            .card-footer{
+                .text-link{
+                    display:flex;
+                    align-items: end; 
+                    a{
+                       color: #faf172;
+                       text-decoration: underline;
+                   }
+
+                }
+            }
+    }
+}
+
+
+.btn-voltar{
+    display: block;
+    border-radius: 0.5rem;
+    border: 2px solid #a2da94;
+    margin: 0.75rem 2rem;
+    color: white;
+    width: auto;
+
+}
