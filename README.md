@@ -1,8 +1,4 @@
-# RickAndMortyApp
-
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
-
-
+# Rick And Morty Spa
 
 📌Sobre esse projeto
 
@@ -22,6 +18,10 @@ Site - Rick And Morty
 
 🌐Technologies
 
+Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+
+Api: https://rickandmortyapi.com/
+
 <div>
    <a href="#">
         <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
@@ -34,13 +34,10 @@ Site - Rick And Morty
     </a>
   <br>
     <a  href="#">
-      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular 15&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
+      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
     </a>
     <a href="#">
       <img  src="https://img.shields.io/static/v1?label=framework&message=Bootstrap&color=563d7c&style=for-the-badge&logo=Bootstrap"  alt="Language: Bootstrap">
-    </a>
-      <a  href="#">
-      <img  src="https://img.shields.io/static/v1?label=Design&message=Angular material&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
     </a>
     <br>
 </div>
