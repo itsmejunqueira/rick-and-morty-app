@@ -1,6 +1,46 @@
-# RickAndMortyApp
+# Rick And Morty Spa
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+📌Sobre esse projeto
+
+Site - Rick And Morty  
+
+- Apresentação dos personagens.
+- Detalhes dos personagens.
+- Apresentação dos episodios.
+- Detalhes dos eps.
+- Apresentação das localizações/ dimensoes / espaços.
+- Detalhes das localizações/ dimensoes / espaços.
+
+  
+ 📲 Versão publicada 💻
+ 
+(https://itsmejunqueira.github.io/rick-and-morty-app/character-list)
+
+🌐Technologies
+
+Este projeto foi gerado utilizando [Angular CLI](https://github.com/angular/angular-cli) version 19.2.7.
+
+Api: https://rickandmortyapi.com/
+
+<div>
+   <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Typescript&color=blue&style=for-the-badge&logo=Typescript" alt="Language: Typescript">
+    </a>
+    <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=Javascript&color=yellow&style=for-the-badge&logo=JavaScript" alt="Language: Javascript">
+    </a>
+   <a href="#">
+        <img src="https://img.shields.io/static/v1?label=Language&message=SASS&color=ff69b4&style=for-the-badge&logo=SASS" alt="Language: SASS">
+    </a>
+  <br>
+    <a  href="#">
+      <img  src="https://img.shields.io/static/v1?label=Framework&message=Angular&color=e23237&style=for-the-badge&logo=Angular"  alt="Language: Angular"> 
+    </a>
+    <a href="#">
+      <img  src="https://img.shields.io/static/v1?label=framework&message=Bootstrap&color=563d7c&style=for-the-badge&logo=Bootstrap"  alt="Language: Bootstrap">
+    </a>
+    <br>
+</div>
 
 ## Development server
 
