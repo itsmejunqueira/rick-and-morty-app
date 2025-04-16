@@ -1,13 +1,13 @@
 import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { EpisodeService } from '../../services/episode.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-episode-details',
-  imports: [HttpClientModule, AsyncPipe],
+  imports: [HttpClientModule, AsyncPipe, RouterLink],
   templateUrl: './episode-details.component.html',
   styleUrl: './episode-details.component.scss',
   providers: [EpisodeService]

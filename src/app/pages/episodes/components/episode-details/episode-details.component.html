@@ -1,6 +1,6 @@
 <div class="row" #episodeList>
     <a class="btn btn-voltar" type="button" id="btnVoltar" aria-label="voltar para a lista"
-        href="/episode-list">
+        routerLink="/episode-list">
         voltar
     </a>
     <div class="w-100">
@@ -28,7 +28,7 @@
                                 <span class="text-link ms-2 flex-wrap">
                                     @for (item of episode.characters; track item.id; let idx = $index, e = $even)
                                     {
-                                    <a class="px-2" [href]="getCharacterPath(item)"> {{idx +1}}º personagem</a>
+                                    <a class="px-2" [routerLink]="getCharacterPath(item)"> {{idx +1}}º personagem</a>
                                     }
                                 </span>
                             </div>

@@ -6,7 +6,7 @@
         <ul class="section-cards w-100 d-flex flex-wrap">
             @for (item of episodes; track item.name) {
             <li class="card-episode">
-                <a id="personagens" [href]="'/episode-details/' + item.id" aria-label="escolher e ver episodios">
+                <a id="personagens" [routerLink]="'/episode-details/' + item.id" aria-label="escolher e ver episodios">
                     <div class="episode-content">
                         <div class="card-header">
                             <img class="photo-style" src="imgs/ricks1.jpg" alt="photo" />

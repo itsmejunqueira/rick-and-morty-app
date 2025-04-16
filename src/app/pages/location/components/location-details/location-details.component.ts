@@ -1,13 +1,13 @@
 import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { LocationService } from '../../services/location.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-location-details',
-  imports: [HttpClientModule, AsyncPipe],
+  imports: [HttpClientModule, AsyncPipe, RouterLink],
   templateUrl: './location-details.component.html',
   styleUrl: './location-details.component.scss',
   providers: [LocationService]

@@ -1,6 +1,6 @@
 <div class="row" #characterList>
     <a class="btn btn-voltar" type="button" id="btnVoltar" aria-label="voltar para a lista"
-        href="/character-list">
+        routerLink="/character-list">
         voltar
     </a>
     <div class="w-100">
@@ -26,11 +26,11 @@
                                 </span>
                                 <h6 class="mt-2"> Origem: </h6>
                                 <span class="text-link ms-2">
-                                    <a [href]="getLocationPath(character.location)">{{character.location.name}}</a>
+                                    <a [routerLink]="getLocationPath(character.location)">{{character.location.name}}</a>
                                 </span>
                                 <h6 class="mt-2"> Localização:</h6>
                                 <span class="text-link ms-2">
-                                    <a [href]="getLocationPath(character.location)">{{character.location.name}}</a>
+                                    <a [routerLink]="getLocationPath(character.location)">{{character.location.name}}</a>
                                 </span>
 
                             </div>
@@ -40,7 +40,7 @@
                     <span class="text-link ms-2 flex-wrap">
                         @for (item of character.episode; track item.id; let idx = $index, e = $even)
                         {
-                        <a class="px-2" [href]="getEpisodePath(item)">{{idx +1}}º episodio</a>
+                        <a class="px-2" [routerLink]="getEpisodePath(item)">{{idx +1}}º episodio</a>
                         }
                     </span>
                 </a>

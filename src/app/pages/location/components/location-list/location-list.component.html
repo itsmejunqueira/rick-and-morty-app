@@ -6,7 +6,7 @@
         <ul class="section-cards w-100 d-flex flex-wrap">
             @for (item of locations; track item.name) {
             <li class="card-location">
-                <a id="personagens" [href]="'/location-details/' + item.id" aria-label="escolher e ver episodios">
+                <a id="personagens" [routerLink]="'/location-details/' + item.id" aria-label="escolher e ver episodios">
                     <div class="location-content">
                         <div class="card-header mx-2">
                             <div class="d-flex justify-content-center flex-wrap flex-column my-2">

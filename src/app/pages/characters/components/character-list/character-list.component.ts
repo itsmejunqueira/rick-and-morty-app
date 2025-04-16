@@ -2,11 +2,13 @@ import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular
 import { CharacterService } from '../../services/character.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchService } from '../../../../shared/service/search.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-character-list',
   imports: [
-    HttpClientModule
+    HttpClientModule,
+    RouterLink
   ],
   templateUrl: './character-list.component.html',
   styleUrl: './character-list.component.scss',

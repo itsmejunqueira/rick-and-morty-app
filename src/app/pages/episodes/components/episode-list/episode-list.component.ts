@@ -2,10 +2,11 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { EpisodeService } from '../../services/episode.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchService } from '../../../../shared/service/search.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-episode-list',
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, RouterLink],
   templateUrl: './episode-list.component.html',
   styleUrl: './episode-list.component.scss',
     providers:[ EpisodeService]

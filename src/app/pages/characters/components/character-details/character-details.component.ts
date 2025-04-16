@@ -1,13 +1,13 @@
 import { Component, ElementRef, inject, OnInit, ViewChild } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { CharacterService } from '../../services/character.service';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { Observable, switchMap } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
 
 @Component({
   selector: 'app-character-details',
-  imports: [HttpClientModule, AsyncPipe ],
+  imports: [HttpClientModule, AsyncPipe, RouterLink ],
   templateUrl: './character-details.component.html',
   styleUrl: './character-details.component.scss',
   providers:[CharacterService]

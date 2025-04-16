@@ -2,10 +2,11 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { LocationService } from '../../services/location.service';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchService } from '../../../../shared/service/search.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-location-list',
-  imports: [HttpClientModule],
+  imports: [HttpClientModule, RouterLink],
   templateUrl: './location-list.component.html',
   styleUrl: './location-list.component.scss',
   providers: [LocationService]
