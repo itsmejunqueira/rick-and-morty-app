@@ -1,0 +1,40 @@
+<div class="row" #characterList>
+    <div class="section-header">
+        <h4> Todos os Personagens </h4>
+    </div>
+    <div class="w-100">
+        <ul class="section-cards w-100 d-flex flex-wrap">
+            @for (item of characters; track item.name) {
+            <li class="card-character">
+                <a id="personagens" aria-label="escolher e ver episodios">
+                    <div class="character-content">
+                        <div class="card-header">
+                            <a [href]="'/character-details/' + item.id" class="card-link">
+                                <img class="photo-style" [src]="item.image" alt="photo" />
+                            </a>                            
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-center flex-wrap flex-column my-2">
+                                <h6 class="d-flex align-items-start character-name ms-2">
+                                    Nome: {{item.name}}
+                                </h6>
+                                <div>
+                                    <span class="d-flex align-items-end ms-2">
+                                        Status: {{item.status}}
+                                    </span>
+                                    <span class="d-flex align-items-end ms-2">
+                                        Especie: {{item.species}}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+            }@empty {
+            <li>There are no characters.</li>
+            }
+        </ul>
+    </div>
+</div>
