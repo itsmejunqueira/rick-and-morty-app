@@ -1,0 +1,30 @@
+<div class="row" #episodeList>
+    <div class="section-header">
+        <h4> Todos os episódios </h4>
+    </div>
+    <div class="w-100">
+        <ul class="section-cards w-100 d-flex flex-wrap">
+            @for (item of episodes; track item.name) {
+            <li class="card-episode">
+                <a id="personagens" [href]="'/episode-details/' + item.id" aria-label="escolher e ver episodios">
+                    <div class="episode-content">
+                        <div class="card-header">
+                            <img class="photo-style" src="../../../../../imgs/ricks1.jpg" alt="photo" />
+                        </div>
+                        <div class="card-footer mx-2">
+                            <div class="d-flex justify-content-center flex-wrap flex-column my-2">
+                                <h6 class="d-flex align-items-start episode-name ms-2">
+                                    {{item.episode}} - {{item.name}}
+                                </h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </a>
+            </li>
+            }@empty {
+            <li>There are no episode.</li>
+            }
+        </ul>
+    </div>
+</div>

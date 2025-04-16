@@ -1,0 +1,42 @@
+<div class="row" #episodeList>
+    <a class="btn btn-voltar" type="button" id="btnVoltar" aria-label="voltar para a lista"
+        href="/episode-list">
+        voltar
+    </a>
+    <div class="w-100">
+        @if (episode$ | async; as episode) {
+        <ul class="section-cards w-100 d-flex flex-wrap">
+            <li class="card-episode">
+                <a id="personagens" aria-label="escolher e ver episodios">
+                    <div class="episode-content">
+                        <div class="card-header">
+                            <img class="photo-style" src="../../../../../imgs/ricks1.jpg" alt="photo" />
+                        </div>
+                        <div class="card-footer mx-2">
+                            <div class="d-flex justify-content-center flex-wrap flex-column my-2">
+                                <h6> Nome: {{episode.name}}</h6>
+                                <span>
+                                    Ref: {{episode.episode}}
+                                </span>
+                                <span>
+                                    Data lançamento: {{episode.air_date}}
+                                </span>
+                                <span>
+                                    Especie: {{episode.gender}}
+                                </span>
+                                <h6 class="mt-2"> Personagens que aparecem no episódio:</h6>
+                                <span class="text-link ms-2 flex-wrap">
+                                    @for (item of episode.characters; track item.id; let idx = $index, e = $even)
+                                    {
+                                    <a class="px-2" [href]="getCharacterPath(item)"> {{idx +1}}º personagem</a>
+                                    }
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        }
+    </div>
+</div>
